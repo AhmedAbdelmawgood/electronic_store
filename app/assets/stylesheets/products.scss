@@ -1,0 +1,249 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+.page_container{
+	margin:100px auto;
+	width:85%;
+}
+.sphere{
+	background-color: rgba(81,.81,255,1);
+	border-radius: 100%;
+	width:230px;
+	height: 230px;
+	float:left;
+	vertical-align: 20%;
+	cursor: pointer;
+	// position: relative;
+	margin:30px 30px;
+	border:1px groove rgb(79,81,255);
+	box-shadow: 3px 5px 25px;
+	text-align: center;
+	// extend
+	a{
+		text-decoration: none;
+		font-size: 2.3em;
+		color:white;
+		display:block;
+		width: 230px;
+		height:230px;
+		// background-color: rgba(81,.81,255,1);
+		border-radius: 100%;
+		line-height: 270px;
+		font-family: 'Roboto',sans-serif;
+		// position:absolute;
+		// top:50%;
+		// left:50%;
+		// display:block;
+		// margin:auto auto;
+		// display: table-cell;
+		// vertical-align:middle;
+		// display: -moz-box;
+		// -moz-box-align: center;
+	}
+	a:hover{
+		text-decoration: none;
+		color:gray;
+	}
+}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+/*clearfix*/
+.container-custom{
+  max-width:980px;
+  padding:20px;
+  box-sizing:border-box;
+  margin:20px auto;
+  box-shadow: 10px      5px 20px gray;
+  border-radius: 5%;
+}
+.container-custom,.image-preview,
+.details,.cart{
+  box-sizing:border-box;
+}
+.first-section{
+}
+.image-preview,
+.details,.cart
+{
+  float:left;
+}
+.image-preview{
+  width:40%;
+  padding:10px;
+  overflow:hidden;
+}
+.image-preview img{
+  width:100%;
+  height: 100%;
+}
+.details{
+  width:40%;
+  padding:10px;
+}
+.product-name{
+  border-bottom: 1px solid gray;
+}  
+.details p{
+  line-height: 2.5em;
+}
+.cart{
+  width:20%;
+}
+.cart button{
+  width:100%;
+  height:50px;
+  background: #6A9113; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #6A9113 , #141517); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #6A9113 , #141517); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius:10px;
+  border:0px;
+  color:yellow;
+  font-size:1.25em;
+}
+.second-section{
+	box-sizing:border-box;
+	background: #70e1f5; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #70e1f5 , #ffd194); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border-radius: 5%;
+	padding:10px;
+}
+.second-section h2{
+  font-weight: bold;
+  margin: 5px 0 15px 0;
+}
+.first-section, .second-section{
+	margin-bottom: 50px;
+}
+.product-description{
+  font-size:1.2em;
+  line-height: 1.5em; 
+}
+.product-description span{
+  font-weight: bold;
+}
+// .home{
+// 	@extend .alert;
+// 	@extend .glyphicon-home;	
+// }
+// .electronics{
+// 	background-image: url('http://digitalsynopsis.com/wp-content/uploads/2013/12/flat-design-apple-icon-devices.jpg');
+// 	background-position: center center;
+// 	background-size: 150px 150px;
+// 	background-repeat: no-repeat;
+// }
+/*Thumb pages*/
+h1,h2,h3,h4,h5,h6{
+	font-family:opensans,"Helvetica Neue",Helvetica,Helvetica,Arial,sans-serif;
+	line-height: 1.4;
+}
+.cust_container{
+	width:840px;
+	float:right;
+	margin-right:80px;
+}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+/*clearFix*/
+.thum{
+	width:250px;
+	display: block;
+	box-sizing:border-box;
+	padding:40px 10px 10px 10px;
+	height:350px;
+	float:left;
+	box-shadow:2px -2px 5px #cfcfcf  ;
+	margin:15px 8px;
+	border:1px solid #cfcfcf;
+	position:relative;
+	.thum-link{
+		width:100%;
+		position:absolute;
+		top:0;
+		right:0;
+		height:100%;
+		background-color: redl
+	}
+}
+
+.product_image{
+	margin-bottom: 25px;
+	text-align:center;
+	width:85%;
+	height:35%;
+}
+.product_image img{
+	width:100%;
+	height:100%;
+}
+.product_details{
+	height:65%;
+	h4{
+		height:50%;
+	}
+}
+.price-block{
+	box-sizing:border-box;
+	margin-top: 15px;
+	height:50%;
+	display: inline-block;
+	font-weight: 400;
+}
+.price-block a{
+	display: block;
+	text-decoration: none;
+	color:#006fcc;
+	font-size:1.8em;
+	padding-left:12px;
+}
+.pagination{
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    a,span,em {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: inline;
+		transition: background-color .3s;
+	}
+	em {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+	}
+	a:hover
+	{
+	 background-color: #ddd;
+   text-decoration: none;
+	}
+}
+
+.peg{
+	display: block;
+	width: 100%;
+	clear: both;
+
+}

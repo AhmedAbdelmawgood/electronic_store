@@ -1,0 +1,29 @@
+<div class="cust_container">
+	
+	<%= will_paginate @products%>
+        <!-- <div class="container group"> -->
+	<ul>
+		<%	@products.each do |product| %>		
+		<li class="thum">
+			<%= link_to '',product_path(product),class:'thum-link' %>
+			<div class="product_image">
+				<img src="<%= product.image %>" alt="">
+			</div>
+			<div class="product_details">
+				<h4><%= product.name %></h4>
+				<h5 class="price-block">
+					<a href="#">
+						<%= product.price %> $
+					</a>
+				</h5>
+			</div>
+			
+		</li>
+		<% end %>
+	</ul>
+	<div class="peg">
+		<%= will_paginate @products%>
+	</div>
+
+
+</div>

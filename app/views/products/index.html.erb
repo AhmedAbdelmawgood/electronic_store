@@ -1,0 +1,8 @@
+<div class="page_container">
+	
+	<% @categories.each do |cate| %>
+										<div class="sphere <%= cate.to_s %>">
+			<%= link_to "#{cate.capitalize}",controller:"products",action:"category",category:cate.to_s %>
+		</div>
+	<% end %>
+</div>

@@ -1,0 +1,29 @@
+<div class="container-custom">
+					
+				<div class="group first-section">
+					<aside class="image-preview">
+						<img src="<%= @product.image %>" alt="product">
+					</aside>
+					<section class="details">
+						<div class="product-name">
+							<img src="logo.jpg" alt="" class="logo">
+							<h1><%= @product.name %></h1>
+						</div>
+						
+						<p class="product-price">
+							<b> price is : </b><span class="price-block"><%= @product.price %> $$</span>
+						</p>
+					</section>
+					<aside class="cart">
+						<button type="button">Add To Cart</button>
+					</aside>
+				</div>
+				<div class="group second-section">
+				<h2>Product Description</h2>
+				<% @product.product_description.split(/\n/).each do |desc| %>
+					<p class="product-description">
+						<b>-</b><%= desc %>						
+					</p>
+				<% end %>
+				</div>	
+				</div>
