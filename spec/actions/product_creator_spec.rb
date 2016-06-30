@@ -18,8 +18,10 @@ RSpec.describe ProductCreator do
 			company 
 			validity = product.create
 			# puts product.product.company_id,product.product.price
-			# puts product.product.errors.full_messages
-			# puts product.product.company_id
+			puts product.product.errors.full_messages
+			puts product.company_name
+			puts Company.find(company.id)
+			puts ";lllllllllllllllloooooooooooooooooooollllllllll"
 			expect(validity).to be_truthy
 		end
 	end

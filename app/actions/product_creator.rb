@@ -4,7 +4,7 @@ class ProductCreator
 		@product = Product.new
 		@name = opt[:name]
 		@price = opt[:price]
-		@company_name = opt[:company]
+		@company_name = opt[:company_name]
 		@category = opt[:category]
 		@description = opt[:product_description]
 		@information = opt[:product_information]
