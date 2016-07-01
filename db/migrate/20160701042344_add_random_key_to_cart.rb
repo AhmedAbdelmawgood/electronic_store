@@ -1,5 +1,5 @@
 class AddRandomKeyToCart < ActiveRecord::Migration
   def change
-    add_column :carts, :random_key, :integer,limit:16
+    add_column :carts, :random_key, :string
   end
 end

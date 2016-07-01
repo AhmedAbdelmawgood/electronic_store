@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(version: 20160701042344) do
 
   create_table "carts", force: :cascade do |t|
     t.text     "products"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
-    t.integer  "random_key", limit: 16
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "random_key"
   end
 
   create_table "companies", force: :cascade do |t|

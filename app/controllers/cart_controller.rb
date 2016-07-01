@@ -22,6 +22,6 @@ class CartController < ApplicationController
 		x.random_key
 	end
 	def random_num
-		rand(0..100000000000000000)
+		rand(0..100000000000000000).to_s
 	end
 end
