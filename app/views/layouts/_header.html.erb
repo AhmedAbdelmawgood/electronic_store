@@ -1,7 +1,7 @@
 <nav class="navbar navbar-static-top navbar-inverse custom-nav-style">
 <div class="container container-cust">
 	<div class="navbar-header">
-		<%= link_to 'Home', products_path, class:'navbar-brand'%>
+		<%= link_to 'Home', root_path, class:'navbar-brand'%>
 		<button class="navbar-toggle" data-toggle="collapse" data-target=".targetedNav">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -11,7 +11,6 @@
 	</div>
 	<nav class="collapse navbar-collapse targetedNav">
 		<ul class='nav navbar-nav navbar-left'>
-			<li><%=link_to 'Home', "#"%></li>
 			<% Product.main_categories.each do |cate| %>
 			<li><%=link_to "#{cate}", category_path(cate)%></li>
 			<% end %>

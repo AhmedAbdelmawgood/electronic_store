@@ -1,0 +1,23 @@
+<div class="container-custom">
+	<ul>
+		<% @cart.get_products_quant.each do |product,quant|%>
+			<li class="cart-product group">
+				<span class="image">
+					<img src=" <%=product.image%> " alt="image">
+				</span>
+				<span class="name">
+					<em>Name:</em>	<%=product.name%>
+				</span>				
+				<span class="price">
+					<em>Price:</em> <%=product.price%>
+				</span>	
+				<span class="quant">
+					<em>Quantity ordered:</em> <%=quant%>
+				</span>
+			</li>
+		<%end%>
+		<li class="total-price-tag">
+			<em>Total Price:</em> <%= @cart.total_price%>  
+		</li>
+	</ul>
+</div

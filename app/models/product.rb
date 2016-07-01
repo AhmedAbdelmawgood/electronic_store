@@ -13,8 +13,7 @@ class Product < ActiveRecord::Base
 	end
 	def sell(quan)
 		new_quant = quantity-quan
-		puts quan
-		update_attribute(:quantity, new_quant)
+		update_attribute(:quantity, new_quant) if new_quant > 0
 	end
 	def self.categories
 		categories = {electronics: ["cellphone", "accessores", "tablets", "computers", "iphone", "ipad", "tv", "audio"],

@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :company do
-    string "New COmpany"
-    string ""
+    name "New COmpany"
+    location "address"
   end
 end

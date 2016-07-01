@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   resources :products 
   get "/products/c/:category/(:page)" => "products#category", as: :category 
+  root 'products#index'
+  get "/shopping-cart" => 'cart#index',as: 'cart'
+  post "/shopping-cart/:id" => 'cart#new', as: 'new_to_cart'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   # root 'thumb_pages#index'
