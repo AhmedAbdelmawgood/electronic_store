@@ -1,0 +1,128 @@
+// Place all the styles related to the MainPage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.right_section{
+	float:right;
+	width:71%;
+	padding-top:40px;
+}
+.right_section,.filter_section{
+	border-radius: 5px;
+	box-shadow: -5px 5px 10px gray;
+	margin:100px 0;	
+}
+.filter_section{
+	width:26%;
+	float:left;
+	min-height:500px;
+	border:10px solid blue;
+}
+.sphere_container{
+	// box-sizing:border-box;
+
+}
+.sphere{
+	background-color: rgba(81,.81,255,1);
+	border-radius: 100%;
+	width:205px;
+	height: 205px;
+	float:right;
+	vertical-align: 20%;
+	cursor: pointer;
+	// position: relative;
+	margin:30px 30px;
+	border:1px groove rgb(79,81,255);
+	box-shadow: 3px 5px 15px;
+	text-align: center;
+	// extend
+	a{
+		text-decoration: none;
+		font-size: 2em;
+		color:white;
+		display:block;
+		width: 205px;
+		height:205px;
+		// background-color: rgba(81,.81,255,1);
+		border-radius: 100%;
+		line-height: 205px;
+		font-family: 'Roboto',sans-serif;
+		// position:absolute;
+		// top:50%;
+		// left:50%;
+		// display:block;
+		// margin:auto auto;
+		// display: table-cell;
+		// vertical-align:middle;
+		// display: -moz-box;
+		// -moz-box-align: center;
+	}
+	a:hover{
+		text-decoration: none;
+		color:gray;
+	}
+}
+// slider styling
+.slider-wrap{
+  height:500px;
+  position:relative;
+}
+*{
+  font-family:sans-serif;
+  font-size:1.07em;
+}
+.slide{
+  position:relative;
+  float:left;
+  width:0;
+  height:inherit;
+  overflow: hidden;
+}
+.slide span{
+  position:absolute;
+  line-height: 110px;
+  height:0px;
+  bottom:0;
+  left:0;
+  width:inherit;
+  padding:0 10px;
+  box-sizing: border-box;
+  color:white;
+  background-color:rgba(0,0,0,.5); 
+  z-index:99;
+  display:block;
+}
+.slide .box-opacity{
+  width:100%;
+  height:0px;
+  background: rgba(0,0,0,0.0);
+  position:absolute;
+  bottom:0;
+  z-index:999;
+
+}
+.forward,.backward{
+  width:50px;
+  height:50px;
+  position:absolute;
+  top:40%;
+  z-index:9999;
+  display: block; 
+  cursor: pointer;
+}
+.forward{
+  background: image-url("forward.png")  no-repeat;
+  background-size: 50px 50px;
+  right:0;
+}
+.backward{
+  background: image-url("backward.png") no-repeat;
+  background-size: 50px 50px;
+  left:0;
+}
+.slide img{
+  width:inherit;height:inherit;
+  display:block;
+  position:absolute;
+  /*top:0;*/
+  /*z-index:-1;*/
+}

@@ -5,9 +5,12 @@ class Product < ActiveRecord::Base
 	validates :company_id, presence: true
 	validates :name,:price,:quantity,:category , presence: true
 	validates :name, uniqueness: true
-	scope :category, ->(category) {where category:category }
-	scope :sub_category,->(sub) {where sub_category:sub}
-
+	scope :category, ->(category) { where category:category }
+	scope :sub_category,->(sub) { where sub_category:sub }
+	scope :new_release, -> do  
+		order(created_at: :desc)
+	end 
+	# scope :filter,->({price:nil,}) do
 	def available?
 		!(quantity <= 0)
 	end
@@ -29,6 +32,9 @@ class Product < ActiveRecord::Base
 	def self.sub_categories(category)
 		return categories[category] if (main_categories.include?category) 
 		return false 
+	end
+	def new_products(num)
+		Product.all.order_by()
 	end
 end
 

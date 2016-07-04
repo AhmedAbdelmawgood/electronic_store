@@ -2,50 +2,47 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-.page_container{
-	margin:100px auto;
-	width:85%;
-}
-.sphere{
-	background-color: rgba(81,.81,255,1);
-	border-radius: 100%;
-	width:230px;
-	height: 230px;
-	float:left;
-	vertical-align: 20%;
-	cursor: pointer;
-	// position: relative;
-	margin:30px 30px;
-	border:1px groove rgb(79,81,255);
-	box-shadow: 3px 5px 25px;
-	text-align: center;
-	// extend
-	a{
-		text-decoration: none;
-		font-size: 2.3em;
-		color:white;
-		display:block;
-		width: 230px;
-		height:230px;
-		// background-color: rgba(81,.81,255,1);
-		border-radius: 100%;
-		line-height: 270px;
-		font-family: 'Roboto',sans-serif;
-		// position:absolute;
-		// top:50%;
-		// left:50%;
-		// display:block;
-		// margin:auto auto;
-		// display: table-cell;
-		// vertical-align:middle;
-		// display: -moz-box;
-		// -moz-box-align: center;
-	}
-	a:hover{
-		text-decoration: none;
-		color:gray;
-	}
-}
+
+//.sphere{
+// 	background-color: rgba(81,.81,255,1);
+// 	border-radius: 100%;
+// 	width:230px;
+// 	height: 230px;
+// 	float:left;
+// 	vertical-align: 20%;
+// 	cursor: pointer;
+// 	// position: relative;
+// 	margin:30px 30px;
+// 	border:1px groove rgb(79,81,255);
+// 	box-shadow: 3px 5px 25px;
+// 	text-align: center;
+// 	// extend
+// 	a{
+// 		text-decoration: none;
+// 		font-size: 2.3em;
+// 		color:white;
+// 		display:block;
+// 		width: 230px;
+// 		height:230px;
+// 		// background-color: rgba(81,.81,255,1);
+// 		border-radius: 100%;
+// 		line-height: 270px;
+// 		font-family: 'Roboto',sans-serif;
+// 		// position:absolute;
+// 		// top:50%;
+// 		// left:50%;
+// 		// display:block;
+// 		// margin:auto auto;
+// 		// display: table-cell;
+// 		// vertical-align:middle;
+// 		// display: -moz-box;
+// 		// -moz-box-align: center;
+// 	}
+// 	a:hover{
+// 		text-decoration: none;
+// 		color:gray;
+// 	}
+// }
 .group:before,
 .group:after {
   content: "";

@@ -13,6 +13,7 @@ gem 'will_paginate'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'faker'
+gem 'devise'
 group :development, :test do
   gem 'byebug'
 	gem 'sqlite3'
