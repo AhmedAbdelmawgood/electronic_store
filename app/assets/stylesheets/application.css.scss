@@ -27,3 +27,23 @@
   clear: both;
   *zoom: 1;
 }
+h1,h2,h3,h4,h5,h6{
+	font-family:opensans,"Helvetica Neue",Helvetica,Helvetica,Arial,sans-serif;
+	line-height: 1.4;
+}
+.box-shadow{
+	border-radius: 5px;
+	box-shadow: -5px 5px 10px gray;
+}
+.theme-color{
+	background-color: #33691e;
+	ul{
+		padding:0px;
+	}
+	li,a{
+		color:white;
+	}
+	.nav li a:hover{
+		background-color:#558b2f;
+	}
+}

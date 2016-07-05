@@ -1,5 +1,5 @@
 // $(function(){alert("hello")})
-$(document).ready(function(){ 
+$(document).on('turbolinks:load',function(){ 
 var click = false;
 var slider ={
   elements:$(".slide"),

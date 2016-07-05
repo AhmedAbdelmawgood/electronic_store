@@ -3,70 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
-//.sphere{
-// 	background-color: rgba(81,.81,255,1);
-// 	border-radius: 100%;
-// 	width:230px;
-// 	height: 230px;
-// 	float:left;
-// 	vertical-align: 20%;
-// 	cursor: pointer;
-// 	// position: relative;
-// 	margin:30px 30px;
-// 	border:1px groove rgb(79,81,255);
-// 	box-shadow: 3px 5px 25px;
-// 	text-align: center;
-// 	// extend
-// 	a{
-// 		text-decoration: none;
-// 		font-size: 2.3em;
-// 		color:white;
-// 		display:block;
-// 		width: 230px;
-// 		height:230px;
-// 		// background-color: rgba(81,.81,255,1);
-// 		border-radius: 100%;
-// 		line-height: 270px;
-// 		font-family: 'Roboto',sans-serif;
-// 		// position:absolute;
-// 		// top:50%;
-// 		// left:50%;
-// 		// display:block;
-// 		// margin:auto auto;
-// 		// display: table-cell;
-// 		// vertical-align:middle;
-// 		// display: -moz-box;
-// 		// -moz-box-align: center;
-// 	}
-// 	a:hover{
-// 		text-decoration: none;
-// 		color:gray;
-// 	}
+// .container-custom{
+//   max-width:980px;
+//   box-sizing:border-box;
+//   margin:20px auto;
+//   padding:0px;
+//   box-shadow: 10px 5px 20px gray;
+//   border-radius: 5%;
+//   ul{
+//   	padding:0px;
+//   }
 // }
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
-}
-/*clearfix*/
-.container-custom{
-  max-width:980px;
-  padding:20px;
-  box-sizing:border-box;
-  margin:20px auto;
-  box-shadow: 10px      5px 20px gray;
-  border-radius: 5%;
-}
 .container-custom,.image-preview,
 .details,.cart{
   box-sizing:border-box;
+}
+.padding-top{
+	padding:15px;
+	padding-top:50px;
 }
 .first-section{
 }
@@ -130,93 +84,90 @@
 .product-description span{
   font-weight: bold;
 }
-// .home{
-// 	@extend .alert;
-// 	@extend .glyphicon-home;	
-// }
-// .electronics{
-// 	background-image: url('http://digitalsynopsis.com/wp-content/uploads/2013/12/flat-design-apple-icon-devices.jpg');
-// 	background-position: center center;
-// 	background-size: 150px 150px;
-// 	background-repeat: no-repeat;
-// }
-/*Thumb pages*/
-h1,h2,h3,h4,h5,h6{
-	font-family:opensans,"Helvetica Neue",Helvetica,Helvetica,Arial,sans-serif;
-	line-height: 1.4;
-}
-.cust_container{
-	width:840px;
-	float:right;
-	margin-right:80px;
-}
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
-}
-/*clearFix*/
-.thum{
-	width:250px;
-	display: block;
-	box-sizing:border-box;
-	padding:40px 10px 10px 10px;
-	height:350px;
-	float:left;
-	box-shadow:2px -2px 5px #cfcfcf  ;
-	margin:15px 8px;
-	border:1px solid #cfcfcf;
-	position:relative;
-	.thum-link{
-		width:100%;
-		position:absolute;
-		top:0;
-		right:0;
-		height:100%;
-		background-color: redl
-	}
-}
 
-.product_image{
-	margin-bottom: 25px;
-	text-align:center;
-	width:85%;
-	height:35%;
-}
-.product_image img{
-	width:100%;
-	height:100%;
-}
-.product_details{
-	height:65%;
-	h4{
+
+.thum-container{
+	width:75.6%;
+	float:right;
+	text-align: center;
+	padding:1.25%;
+	box-sizing:border-box;
+	.thum{
+		width:30.59%;
+		display: block;
+		box-sizing:border-box;
+		padding:40px 10px 10px 10px;
+		height:350px;
+		float:left;
+		box-shadow:2px -2px 5px #cfcfcf  ;
+		margin:15px 1.37%;
+		border:1px solid #cfcfcf;
+		position:relative;
+		.thum-link{
+			width:100%;
+			position:absolute;
+			top:0;
+			right:0;
+			height:100%;
+			background-color: redl
+		}
+	}
+
+	.product-image{
+		margin-bottom: 25px;
+		text-align:center;
+		width:85%;
+		height:35%;
+	}
+	.product-image img{
+		width:100%;
+		height:100%;
+	}
+	.product-details{
+		height:65%;
+		h4{
+			height:50%;
+		}
+	}
+	.price-block{
+		box-sizing:border-box;
+		margin-top: 15px;
 		height:50%;
+		display: inline-block;
+		font-weight: 400;
+	}
+	.price-block a{
+		display: block;
+		text-decoration: none;
+		color:#006fcc;
+		font-size:1.8em;
+		padding-left:12px;
 	}
 }
-.price-block{
-	box-sizing:border-box;
-	margin-top: 15px;
-	height:50%;
-	display: inline-block;
-	font-weight: 400;
+.filter-container{
+	width:22.4%;
+	float:left;
+	height:700px;
+	position:relative;
 }
-.price-block a{
+.filter{
+	background-color: #8bc34a;
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+	position: absolute;
 	display: block;
-	text-decoration: none;
-	color:#006fcc;
-	font-size:1.8em;
-	padding-left:12px;
+	color:white;
+	font-size:120%;
+	width:100%;
+	padding:5%;
+	top:0px;
+	left:0px;
+
 }
-.pagination{
-    display: block;
-    padding: 0;
+.custom-pagination{
+    display: inline-block;
+    // width:100%;
+    padding: 10px;
     margin: 0 auto;
     a,span,em {
     color: black;
@@ -238,9 +189,4 @@ h1,h2,h3,h4,h5,h6{
 	}
 }
 
-.peg{
-	display: block;
-	width: 100%;
-	clear: both;
 
-}

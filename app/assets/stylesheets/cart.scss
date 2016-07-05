@@ -38,19 +38,23 @@ em{
 	}
 	}
 }
+.center-price-tag{
+	width:100%;
+	text-align: center;
+	margin:10px;
+}
 .total-price-tag{
-	width:280px;
 	height:60px;
-	display:block;
-	margin:0 auto;
+	display:inline-block;
 	text-decoration:none;
-	background-color:#3d66e0;
-	color:white;
+	background-color:#558b2f;
+	color:#f1f8e9;
 	font-weight:bold;
 	font-family:sans-serif;
 	text-align:center;
 	box-sizing:border-box;
-	padding-top:10px;
+	padding:5px;
+	line-height:60px;
 	font-size:1.75em;
 	border-radius:15px;	
 }

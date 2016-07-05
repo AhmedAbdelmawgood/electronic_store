@@ -1,23 +1,15 @@
 // Place all the styles related to the MainPage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.right_section{
-	float:right;
-	width:71%;
-	padding-top:40px;
-}
-.right_section,.filter_section{
-	border-radius: 5px;
-	box-shadow: -5px 5px 10px gray;
-	margin:100px 0;	
-}
-.filter_section{
+
+
+.filter-section{
 	width:26%;
 	float:left;
 	min-height:500px;
 	border:10px solid blue;
 }
-.sphere_container{
+.sphere-container{
 	// box-sizing:border-box;
 
 }
