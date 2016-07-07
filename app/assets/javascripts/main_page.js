@@ -40,9 +40,11 @@ var slider ={
   current:0
 
 }
-$(function(){
-  slider.forward()
-})
+var sliderAuto = function(){slider.forward()}
+sliderAuto()
+$(setInterval(sliderAuto,3000)
+)
 $(document).on( 'click',".forward",function(){slider.forward()} );
 $(document).on('click',".backward",function(){slider.backward()} ) ;
 })
+
