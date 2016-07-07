@@ -105,11 +105,13 @@
   background: image-url("forward.png")  no-repeat;
   background-size: 50px 50px;
   right:0;
+  z-index:9999;
 }
 .backward{
   background: image-url("backward.png") no-repeat;
   background-size: 50px 50px;
   left:0;
+  z-index:9999;
 }
 .slide img{
   width:inherit;height:inherit;
@@ -117,4 +119,12 @@
   position:absolute;
   /*top:0;*/
   /*z-index:-1;*/
+}
+.click-link{
+  width:100%;
+  position:absolute;
+  top:0;
+  right:0;
+  height:100%;
+  z-index:999; 
 }

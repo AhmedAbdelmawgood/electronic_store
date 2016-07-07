@@ -50,7 +50,7 @@ class ProductsController < ApplicationController
 		filtered = FilterProducts.new(filter_params)
 		filtered.filter
 		puts filtered.products 
-		@products = filtered.products.paginate(page:1,per_page:10)
+		@products = filtered.products.paginate(page:params[:page],per_page:10)
 		@category = params[:filter][:category]
 		render :category
 	end

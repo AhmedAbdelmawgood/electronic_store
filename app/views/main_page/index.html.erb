@@ -4,6 +4,7 @@
 		<span class="forward"></span>
 		<% @new_products.each do |product|%>
 			<div class="slide">
+				<%= link_to '',product_path(product),class:'click-link'%>
 				<span class="text" style="text-align:center;"><%=product.name%></span>
 				<div class="box-opacity"></div>
 				<img src="<%=product.image%>" alt="">
