@@ -16,8 +16,14 @@ class ProductsController < ApplicationController
 		end
 	end
 	def category
-		(params[:page] = 1 ) unless params[:page]  
+		if params[:filter]
+			# fail
+			filter
+		else
+		(params[:page] = 1 ) unless params[:page]
+		@category = params[:category] 
 		@products = Product.category(params[:category]).paginate(page: params[:page],per_page:10)
+		end
 	end 
 	def show
 		@product = Product.find(params[:id])
@@ -39,6 +45,17 @@ class ProductsController < ApplicationController
 
 			render :edit
 		end
+	end
+	def filter
+		filtered = FilterProducts.new(filter_params)
+		filtered.filter
+		puts filtered.products 
+		@products = filtered.products.paginate(page:1,per_page:10)
+		@category = params[:filter][:category]
+		render :category
+	end
+	def filter_params
+		params.require(:filter).permit(:category,:price,sub_category:[])
 	end
 	def white_params
 		params.require(:product).permit(:name, :price, :company, :product_description,
