@@ -47,3 +47,17 @@ h1,h2,h3,h4,h5,h6{
 		background-color:#558b2f;
 	}
 }
+.sign-new{
+	float:right;
+	a{
+		text-decoration:none;
+		color:white;
+		display: inline-block;
+		margin:0 5px;
+		font-size:1.1em;
+		box-sizing:border-box;
+	}
+	a:hover{
+		background-color:rgb(85,139,74);
+	}
+}

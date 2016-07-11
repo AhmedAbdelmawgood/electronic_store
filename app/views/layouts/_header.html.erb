@@ -14,7 +14,18 @@
 			<% Product.main_categories.each do |cate| %>
 			<li><%=link_to "#{cate}", category_path(cate)%></li>
 			<% end %>
-		</ul>	
+		</ul>
+		<div class="sign-new">
+			
+			<%if user_signed_in?%>
+				<%=link_to 'Add Product',new_product_path,class:'navbar-brand'%>
+				<%=link_to 'Sign Out',destroy_user_session_path,class:'navbar-brand',method: :delete%>
+			<%else%>
+				<%=link_to 'SignIn',new_user_session_path,class:'navbar-brand'%>
+				<%=link_to 'SignUp',new_user_registration_path,class:'navbar-brand'%>
+			<%end%>
+		</div>
+
 	</nav>
 </div>
 </nav>

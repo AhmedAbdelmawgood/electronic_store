@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+	before_filter :authenticate_user!,only:[:new,:create,:edit,:update,:delete,:destroy]
 	def index
 		@categories = Product.main_categories
 		# @products = Product.category(params[:category]).paginate(page: 1,per_page:10)

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :products 
   get "/products/c/:category/(:page)" => "products#category", as: :category 
   post "/products/c/:category/(:page)" => "products#category",as: :filter
